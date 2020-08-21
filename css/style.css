@@ -1,0 +1,181 @@
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	background-image: url("../images/bkgnd.png");
+	background-size: cover;
+	height: auto;
+	box-sizing: border-box;
+}
+
+.navbar{
+	font-family: 'Trebuchet MS', sans-serif;
+	float: right;
+	padding-right: 50px;
+	padding-top: 40px;
+	width: 100%;
+}
+
+.bounce ul{
+	display: flex;
+	top:200px;
+}
+.bounce ul li{
+	width: 50px;
+	height: 50px;
+	background-color: white;
+	float:left;
+	list-style: none;
+	margin: 0 7px;
+	border-radius: 50%;
+	animation: bouncy 1.5s linear infinite;
+}
+
+ul li:nth-child(1){
+	animation-delay: 0.2s;
+	background-color: #90EE90;
+}
+ul li:nth-child(2){
+	animation-delay: 0.4s;
+	background-color: #D2691E;
+}
+ul li:nth-child(3){
+	animation-delay: 0.7s;
+	background-color: #ff7675;
+}
+ul li:nth-child(4){
+	animation-delay: 0.9s;
+	background-color: #008B8B;
+}
+
+@keyframes bouncy{
+	0%{ transform: translateY(0px); }
+	50%{ transform: translateY(-120px); }
+	100%{ transform: translateY(0px); }
+}
+.navbar-links a{
+    padding-right: 10px;
+    color:white;
+    text-decoration: none;
+    float: right;
+    margin-right: 50px;
+    font-size: 25px;
+    border-radius: 4px;
+    transition: 0.9s;
+    border: 2px solid #fff;
+    border-left: 5px;
+    border-top:12px;
+    padding-left: 10px;
+    padding-bottom: 7px;
+}
+a:hover{
+	background: rgba(255, 255, 255, 0.9);
+	color: black;
+}
+
+.grid-container{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	padding-top: 200px;
+	padding-left: 90px;
+	align-content: center;
+	width: 90%;
+}
+.grid-item1 img{
+	height: 500px;
+	width: 400px;
+	border-radius: 50px;
+	box-shadow: 
+}
+
+.grid-item1 img{
+    margin:20px;
+    padding:3px;
+    float:left;
+    -webkit-transition: margin 0.5s ease-in-out;
+    -moz-transition: margin 0.5s ease-in-out;
+    -o-transition: margin 0.5s ease-in-out;
+}
+
+.grid-item1 img:hover {
+    cursor:pointer;
+    margin-top: 5px;
+}
+
+.grid-item2{
+    font-family: 'Andale Mono', monospace;
+    font-size: 20px;
+    color: #F2AA4CFF;
+
+}
+.grid-item2 span{
+	color: #FFFAF0;
+	font-size: 70px;
+	font-family: 'Trebuchet MS', sans-serif;
+}
+.dot{
+	color: red;
+	size: 45px;
+}
+
+.container{
+	padding-left: 20px;
+	font-family: 'Andale Mono', monospace;
+	color: white;
+	font-size: 25px;
+}
+.edu-info, .skill-info, .work-info{
+	padding-left: 30px;
+	font-family: 'Trebuchet MS', sans-serif;
+	font-size: 20px;
+}
+.fas{
+	color: #fffaf0;
+	font-size: 19px;
+	text-decoration: none;
+	transition: 0.5s;
+
+}
+.fab{
+	color: #fffaf0;
+	font-size: 30px;
+	text-decoration: none;
+	transition: 0.5s;
+}
+.contact h2{
+	display: inline-block;
+}
+.contact span{
+	color: red;
+}
+
+.fab:hover{
+	background: rgba(255, 255, 255, 0.9);
+	color: black
+}
+
+.fas:hover{
+	color: black;
+}
+.contact .far{
+	color: #F2AA4CFF;
+	font-size: 40px;
+}
+.footer{
+	
+	width: 100%;
+	color: black;
+	background-color: #fffaf0;
+	margin-top: 30px;
+	bottom: 0px;
+}
+.footer .fas, .far{
+	
+	color: black;
+	font-size: 15px;
+}
+.footer p{
+	text-align: center;
+	font-family: 'Trebuchet MS', sans-serif;
+}

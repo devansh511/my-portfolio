@@ -1,0 +1,133 @@
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	background-image: url("../images/bkgnd.png");
+	background-size: cover;
+	height: 100%;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+.grid-container{
+	display: block;
+	padding-top: 100px;
+	padding-left: 10px;
+	align-content: center;
+}
+
+.grid-item2 img{
+	height: 200px;
+	border-radius: 30px;
+    margin:10px;
+    -webkit-transition: margin 0.5s ease-in-out;
+    -moz-transition: margin 0.5s ease-in-out;
+    -o-transition: margin 0.5s ease-in-out;
+}
+
+.grid-item2 img:hover {
+    cursor:pointer;
+    margin-top: 10px;
+}
+
+.grid-item1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    color: #F2AA4CFF;
+
+}
+.grid-item1 span{
+	color: #FFFAF0;
+	font-size: 70px;
+	font-family: ''Trebuchet MS'', sans-serif;
+}
+.dot{
+	color: red;
+	size: 45px;
+}
+
+.container{
+	padding-left: 30px;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	color: white;
+	font-size: 25px;
+}
+.edu-info, .skill-info, .work-info, .project-desc{
+	padding-left: 30px;
+	font-family: 'Bree Serif', serif;
+	font-size: 20px;
+}
+.work-info a{
+	text-decoration: none;
+	color: red;
+}
+.work-info a:hover{
+	border-radius: 3px;
+	background-color: black;
+	color: white;
+	transition: 0.7s;
+}
+.project-info{
+	display: flex;
+	width: 100%;
+}
+.project-info img{
+	padding-left: 25px;
+	width: 300px;
+	height: 400px;
+	border-radius: 25px;
+	margin: 0 auto;
+}
+.project-info p{
+	color: white;
+	font-size: 20px;
+}
+
+.fas{
+	color: #fffaf0;
+	font-size: 19px;
+	
+}
+.fab{
+	color: #fffaf0;
+	font-size: 30px;
+	
+	
+}
+.contact h2{
+	display: inline-block;
+}
+.contact span{
+	color: red;
+}
+.contact .far{
+	color: #F2AA4CFF;
+	font-size: 40px;
+}	
+.footer{
+		text-align: center;
+		display: flex;
+		background-color: #fffaf0;
+		margin-top: 30px;
+		color: black;
+		bottom: 0;
+}
+.footer p{
+	padding-top: 5px;
+	font-family: 'Trebuchet MS', sans-serif;
+	width: 100%;
+}
+
+.contact a{
+	margin: 0 7px;
+}
+
+.contact a:hover{
+	border-bottom: 2px solid white;
+}
+.footer .fas, .far{
+	
+
+	color: black;
+	font-size: 15px;
+}

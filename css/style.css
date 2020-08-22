@@ -5,21 +5,46 @@ html{
 body{
 	background-image: url("../images/bkgnd.png");
 	background-size: cover;
+	background-position: -800px 0;
 	height: 100%;
 	box-sizing: border-box;
-	margin: 0;
-	padding:0;
 }
 
 .navbar{
 	position: fixed;
 	font-family: 'Trebuchet MS', sans-serif;
-	float: right;
+	display: flex;
+	justify-content: flex-end;
+	top: 0;
+	left: 0;
 	padding: 20px 50px 10px 0;
-	width: 100%;
 	z-index: 10;
-	height: 30px;	
+	height: 30px;
+	width: 100%;	
 	background: rgba(36,37,42,0.9);
+}
+
+.navbar-links{
+	padding-bottom: 70px;
+}
+.navbar-links a{
+	position: relative;
+    padding-right: 10px;
+    color:white;
+    text-decoration: none;
+  	float: right;
+    margin-right:35px;
+    font-size: 20px;
+    border-radius: 4px;
+    transition: 0.9s;
+    border: 2px solid #fff;
+    border-left: 5px;
+    border-top:12px;
+    padding-left: 10px;
+}
+.navbar-links a:hover{
+	background: rgba(255, 255, 255, 0.9);
+	color: black;
 }
 .bounce ul{
 	display: flex;
@@ -58,27 +83,8 @@ ul li:nth-child(4){
 	50%{ transform: translateY(-120px); }
 	100%{ transform: translateY(0px); }
 }
-.navbar-links{
-	padding-bottom: 70px;
-}
-.navbar-links a{
-    padding-right: 10px;
-    color:white;
-    text-decoration: none;
-    float: right;
-    margin-right:35px;
-    font-size: 20px;
-    border-radius: 4px;
-    transition: 0.9s;
-    border: 2px solid #fff;
-    border-left: 5px;
-    border-top:12px;
-    padding-left: 10px;
-}
-.navbar-links a:hover{
-	background: rgba(255, 255, 255, 0.9);
-	color: black;
-}
+
+
 
 .grid-container{
 	display: grid;
@@ -87,13 +93,11 @@ ul li:nth-child(4){
 	padding-left: 90px;
 	align-content: center;
 }
+
 .grid-item2 img{
 	height: 500px;
 	width: 400px;
 	border-radius: 50px;
-}
-
-.grid-item2 img{
     margin:20px;
     padding:3px;
     float:left;
@@ -122,6 +126,10 @@ ul li:nth-child(4){
 	color: red;
 	size: 45px;
 }
+.heading{
+	margin-top: 10rem;
+	font-size: 80px;
+}
 
 .container{
 	padding-left: 30px;
@@ -146,7 +154,6 @@ ul li:nth-child(4){
 }
 .project-info{
 	display: flex;
-	width: 100%;
 }
 .project-info img{
 	padding-left: 25px;
@@ -180,15 +187,22 @@ ul li:nth-child(4){
 .contact .far{
 	color: #F2AA4CFF;
 	font-size: 40px;
-}
+}	
 .footer{
-	
+	position: relative;
 	width: 100%;
 	color: black;
 	background-color: #fffaf0;
 	margin-top: 30px;
 	bottom: 0px;
+	padding: 0.5rem 0;
 }
+.footer p{
+	text-align: center;
+	font-family: 'Trebuchet MS', sans-serif;
+	margin: 0 auto;
+}
+
 .contact a{
 	margin: 0 7px;
 }
@@ -197,55 +211,54 @@ ul li:nth-child(4){
 	border-bottom: 2px solid white;
 }
 .footer .fas, .far{
-	
-
 	color: black;
 	font-size: 15px;
 }
-.footer p{
-	text-align: center;
-	font-family: 'Trebuchet MS', sans-serif;
-	margin: 0 auto;
-}
 /*MEDIA QUERIES*/
 
-@media (max-width: 670px){
+@media (max-width: 671px){
 	
 	body{
 		margin: 0;
 		padding:0;
 		box-sizing: border-box;
 	}
-	.navbar{
-		top: 0;
-	}
 	.navbar-links{
 		display: flex;
 		justify-content: space-between;
 		box-sizing: border-box;
-
 	}
 
 	.bounce{
 		display: none;
 	}
-	.footer{
-		padding-right: 250px;
-	}
-	.footer p{
-		align-items: center;
-		margin: 0 auto;\
-		\
-	}
 
-	.grid-container{
-		grid-template-columns: 100%;
-		top: 0;
+	.navbar-links .fas{
+		display: none;
 	}
-
 
 }
+
+
 
 @media (max-width: 850px){
 
+	.project-info{
+		display: block;
+	}
+	.grid-container{
+		display: block;
+	}
+	.navbar-links a{
+		font-size: 10px;
 }
+	.navbar-links .fas{
+		display: none;
+	}
+
+
+}
+
+
+
+

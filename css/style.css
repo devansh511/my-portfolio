@@ -1,3 +1,5 @@
+
+
 html{
 	scroll-behavior: smooth;
 }
@@ -101,15 +103,8 @@ ul li:nth-child(4){
     margin:20px;
     padding:3px;
     float:left;
-    -webkit-transition: margin 0.5s ease-in-out;
-    -moz-transition: margin 0.5s ease-in-out;
-    -o-transition: margin 0.5s ease-in-out;
 }
 
-.grid-item2 img:hover {
-    cursor:pointer;
-    margin-top: 10px;
-}
 
 .grid-item1{
     font-family: 'Raleway', sans-serif;
